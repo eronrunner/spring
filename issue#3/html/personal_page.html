@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Dat Nguyen Resource</title>
+  <meta name="description" content="Personal page">
+  <meta name="author" content="Dat Nguyen">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="dat-header">
+    <div>
+      <a href="#">Logo</a>
+    </div>
+    <div>
+      <a href="#">Home</a>
+    </div>
+    <div>
+      <a href="#">Exit</a>
+    </div>
+  </div>
+  <div class="dat-nav-bar">
+    <div>
+      <a href="#info">Info</a>
+    </div>
+    <div>
+      <a href="#skill">Skill</a>
+    </div>
+    <div>
+      <a href="#favorite">Favorite</a>
+    </div>
+    <div>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="dat-main">
+    <div class="dat-flexible-container">
+        <div width="70px" height="70px" id="status1" class="dat-status" ondrop="drop(event)" ondragover="allowDrop(event)">
+          Drop, like for me!
+        </div>
+      <img class="dat-img-default" src="https://znews-photo-td.zadn.vn/w1024/Uploaded/rdsis/2013_12_16/chi4.jpg">
+      <div width="70px" height="70px" id="status2" statclass="dat-status" ondrop="drop(event)" ondragover="allowDrop(event)">
+          Don't drop angry!
+      </div>
+    </div>
+    <div>
+      <h2>Dat Nguyen</h2>
+    </div>
+    <div class="dat-separator"></div>
+    <div class="dat-flex-container">
+      <h3 id="info" style="text-align:center;">Infomation</h3>
+      <div>
+        <table class="dat-table-default">
+          <tbody id="tableInfo">
+            <tr>
+              <th colspan="2">Personal Record</th>
+            </tr>
+            <tr>
+              <td>Full Name</td>
+              <td>Nguyen Phat Dat</td>
+            </tr>
+            <tr>
+              <td>Birth</td>
+              <td>03-11-1995</td>
+            </tr>
+            <tr>
+              <td>Province</td>
+              <td>An Giang</td>
+            </tr>
+            <tr>
+              <td>Company</td>
+              <td>TMA Solution</td>
+            </tr>
+            <tr>
+              <td>Work Station</td>
+              <td>Lab 4 - Floor 1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <button class="dat-button-default" onclick="addInfo()">Add Info</button>
+      <button class="dat-button-default" onclick="deleteInfo()">Delete Info</button>
+    </div>
+    <div class="dat-separator"></div>
+    <div>
+      <h3 id="skill" style="text-align: center">Skill</h3>
+      <div>
+        <table class="dat-table-default">
+          <tr>
+            <th>Skill Name</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Programming</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Design</td>
+            <td>Normal</td>
+          </tr>
+          <tr>
+            <td>Analysis </td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Team Work</td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>Communication</td>
+            <td>Good</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="dat-separator"></div>
+    <div>
+      <h3 id="favorite" style="text-align: center">Favorite</h3>
+      <div>
+        <div>Music</div>
+        <div>
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/0qJj49UZvN8" frameborder="0" gesture="media" allow="encrypted-media"
+            allowfullscreen>
+          </iframe>
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/UX5oj9isGPM" frameborder="0" gesture="media" allow="encrypted-media"
+            allowfullscreen>
+          </iframe>
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/t0WFOnwp3MM" frameborder="0" gesture="media" allow="encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div>
+        <div>Game</div>
+        <div>
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/rVnHMrbjgzY" frameborder="0" gesture="media" allow="encrypted-media"
+            allowfullscreen>
+          </iframe>
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/s6S4JWVtly8" frameborder="0" gesture="media" allow="encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div>
+        <div>Movie</div>
+        <div>
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/acQyrwQyCOk" frameborder="0" gesture="media" allow="encrypted-media"
+            allowfullscreen>
+          </iframe>
+          <iframe width="320" height="240" src="https://www.youtube.com/embed/i-MAErg8q0w" frameborder="0" gesture="media" allow="encrypted-media"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="dat-separator"></div>
+  </div>
+  <div class="dat-footer">
+    <div>
+      <h3>Address</h3>
+      <ul>
+        <li>Home: 480/13 Chau Phu, An Giang</li>
+        <li>Work: 165A Truong Chinh, ward 15, Ditrict 12, HCM City</li>
+      </ul>
+    </div>
+    <div>
+      <h3 id="contact">Social</h3>
+      <ul>
+        <li>Gmail: eron.runner@gmail.com</li>
+        <li>Facebook: eron.nguyen.3@facebook</li>
+      </ul>
+    </div>
+  </div>
+  <div class="dat-menu-container">
+    <div class="dat-menu-out">
+        <span>
+            <img id="like" draggable="true" ondragstart="drag(event)" src="https://cdn.worldvectorlogo.com/logos/facebook-like.svg" alt="">
+        </span>
+        <span>
+            <img id="love" draggable="true" ondragstart="drag(event)" src="http://weloveiconfonts.com/skin/img/weloveiconfonts.jpg" alt="">
+        </span>
+        <span>
+            <img id="angry" draggable="true" ondragstart="drag(event)" src="https://ih1.redbubble.net/image.265404669.9078/flat,800x800,070,f.u1.jpg" alt="">
+        </span>
+        <span>
+            <img id="haha" draggable="true" ondragstart="drag(event)" src="https://cdn4.iconfinder.com/data/icons/reaction/32/happy-256.png" alt="">
+        </span>
+    </div>
+  </div>
+  <div class="dat-copyright">@Copyrighted By Dat Nguyen</div>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
