@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("http://www.allion.com/uploads/images/service/service-07.jpg");
+    background-size: 100%;
+}
+
+body ul {
+    list-style-type: none;
+    list-style: none;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color:inherit;
+}
+
+/*Header*/
+.dat-header {
+    width: auto;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    line-height: 70px;
+    color: whitesmoke;
+    background-color:rgb(18, 18, 143, 0.8);
+}
+
+.dat-header > div {
+    width: 100px;
+    height: inherit;
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block ;
+    text-align: center;
+}
+
+.dat-header > div:hover {
+    background: darkblue;
+}
+
+.dat-header > div:last-child {
+    margin: 0 10px;
+    height: inherit;
+    line-height: inherit;
+    float: right;
+}
+
+/*Navigation bar*/
+
+.dat-nav-bar {
+    width: 70%;
+    height: 50px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    background-color:burlywood;
+}
+
+.dat-nav-bar > div {
+    margin: auto;
+}
+
+.dat-nav-bar > div:hover {
+    background: rgb(87, 131, 197);
+    border-radius: 20%;
+}
+
+/*main content*/
+
+.dat-main {
+    width: 70%;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+.dat-main > div {
+    margin: auto;
+}
+
+/*status*/
+#status1 img, #status2 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/*Separator*/
+.dat-separator {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    border: 1px solid gray;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.dat-img-default {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.dat-flexible-container {
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dat-flexible-container div {
+    margin: auto;
+}
+
+/*table-default*/
+.dat-table-default {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.dat-table-default tr, .dat-table-default td {
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid silver;
+    word-wrap: break-word;
+}
+
+.dat-table-default th {
+    padding: 10px 10px;
+    background: grey;
+    border: 1px solid silver;
+}
+
+.dat-table-default tr > td:first-child {
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+/*Footer*/
+.dat-footer {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    background-color:burlywood;
+}
+
+.dat-footer ul, .dat-footer ul li {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.dat-footer div {
+    margin: auto 10px;
+    display: inline-block;
+
+}
+
+/* .dat-footer > div:last-child {
+    width: 300px;
+    display: block;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+} */
+
+.dat-copyright {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    bottom: 0;
+    background-color:burlywood;
+    font-size: 75%;
+}
+
+.dat-menu-container {
+    width: 70px;
+    height: 50%;
+    margin: auto 0px;
+    /* background: goldenrod; */
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 30%;
+}
+
+/* .dat-menu-container div.dat-menu-out span {
+    padding: 10px;
+} */
+
+.dat-menu-container div.dat-menu-out span img{
+    width: 70px;
+    height: 70px;
+    margin: 5px auto;
+    padding: 0px;
+    border-radius: 50%;
+    /* border: 2px solid whitesmoke; */
+    /* border-inline-start: 10px solid whitesmoke;
+    border-inline-end: 10px solid whitesmoke; */
+}

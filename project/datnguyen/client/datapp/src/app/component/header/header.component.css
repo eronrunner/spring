@@ -1,0 +1,26 @@
+.header-container {
+    width: 100%;
+    height: 70px;
+    background-color: red;
+    display: flex;
+    flex-flow: row;
+}
+
+.header-container > div {
+    width: 50%;
+    height: inherit;
+    padding: 0px 10px;
+}
+
+.header-container > div:first-child > div {
+    display: inline-block;
+    padding: 0px 20px;
+    line-height: 70px;
+}
+
+.header-container > div:last-child > div {
+    float: right;
+    padding: 0px 20px;
+    line-height: 70px;
+}
+
