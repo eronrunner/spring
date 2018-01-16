@@ -7,6 +7,12 @@ body {
 }
 
 a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+a:visited {
     text-decoration: none;
 }
 
@@ -16,4 +22,42 @@ ul {
 
 ul li {
     list-style: none;
+}
+
+.title {
+    margin: 0 10px; 
+}
+
+.title-main {
+    margin: auto;
+}
+
+.title-right {
+    float: left;
+    margin: 0 10px;
+}
+
+.space {
+    margin: 20px;
+}
+
+.content {
+    margin: 20px;
+}
+.introduction-content{
+    width: inherit;
+    height: 22vw;
+    text-align: justify;
+    max-height: auto;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.float-right{
+    float: right;
+    overflow: auto;
+    display: table;
+}
+
+.float-left {
+    display: inline-block;
 }

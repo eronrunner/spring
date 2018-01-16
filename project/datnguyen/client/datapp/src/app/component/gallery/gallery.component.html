@@ -1,0 +1,10 @@
+<div class="gallery-container">
+  <mat-grid-list cols="2" rows="2" rowHeight="400px">
+    <mat-grid-tile *ngFor="let tile of galleryBoot" [colspan]="tile.cols" [rowspan]="tile.rows" class="grid-test-1">
+      <h1>{{tile.text}}</h1>
+        <button *ngIf="tile.action != ''">
+          {{tile.actionTitle}}
+        </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

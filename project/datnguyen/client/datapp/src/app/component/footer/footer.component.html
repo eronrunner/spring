@@ -1,0 +1,8 @@
+<div class="footer-container">
+  <mat-list *ngFor="let sup of supports.entries()">
+    <h2>{{sup[0]}}</h2>
+    <mat-list-item *ngFor="let contact of sup[1]">
+      {{contact.address}} : {{contact.detail}}
+    </mat-list-item>
+  </mat-list>
+</div>

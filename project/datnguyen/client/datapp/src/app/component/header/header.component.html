@@ -1,22 +1,35 @@
 <div class="header-container">
-    <div>
-       <div>
-           Logo
-       </div>
-       <div>
-           Search
-       </div>
-    </div>
-
-    <div>
+    <mat-toolbar color="primary" style="margin:0;">
         <div>
-            Production
+            <button mat-button>
+                <img src="https://cdn.dribbble.com/users/358786/screenshots/1339220/logodrible.png" width="50px" height="40px">
+            </button>
+            <span class="title">TeaCode</span>
+            <button mat-button>
+                <i class="material-icons">search</i>
+            </button>
+            <mat-input-field>
+                <input matInput placeholder="search">
+            </mat-input-field>
         </div>
         <div>
-            Principle
+            <mat-menu #product="matMenu">
+                <button mat-menu-item>
+                    Web
+                </button>
+                <button mat-menu-item>
+                    Mobile
+                </button>
+            </mat-menu>
+            <button mat-button [matMenuTriggerFor]="product">
+                <span class="title">Production</span>
+            </button>
+            <button mat-button>
+                <span class="title">Principle</span>
+            </button>
+            <button mat-button>
+                <span class="title">About Us</span>
+            </button>
         </div>
-        <div>
-            About Us
-        </div>
-    </div>
+    </mat-toolbar>
 </div>
