@@ -1,10 +1,18 @@
 <div class="gallery-container">
-  <mat-grid-list cols="2" rows="2" rowHeight="400px">
-    <mat-grid-tile *ngFor="let tile of galleryBoot" [colspan]="tile.cols" [rowspan]="tile.rows" class="grid-test-1">
+  <mat-grid-list cols="1" rows="2" rowHeight="200px">
+    <!-- <mat-grid-tile *ngFor="let tile of galleryBoot" [colspan]="tile.cols" [rowspan]="tile.rows" class="grid-test-1">
       <h1>{{tile.text}}</h1>
         <button *ngIf="tile.action != ''">
           {{tile.actionTitle}}
         </button>
+    </mat-grid-tile> -->
+    <mat-grid-tile [colspan]=1 [rowspan]=1 class="grid-test-1">
+      <h1>Webcome To TeaCode Proviver</h1>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]=1 [rowspan]=1 class="grid-test-1">
+      <button mat-button color="primary" [style.background]="['lightblue']" [routerLink]="['register/form']">
+        Get Start
+      </button>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

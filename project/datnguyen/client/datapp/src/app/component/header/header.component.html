@@ -5,29 +5,31 @@
                 <img src="https://cdn.dribbble.com/users/358786/screenshots/1339220/logodrible.png" width="50px" height="40px">
             </button>
             <span class="title">TeaCode</span>
+            <mat-input-container>
+                <input matInput placeholder="search" value="" [style.background]="">
+            </mat-input-container>
+
             <button mat-button>
                 <i class="material-icons">search</i>
             </button>
-            <mat-input-field>
-                <input matInput placeholder="search">
-            </mat-input-field>
+
         </div>
         <div>
-            <mat-menu #product="matMenu">
+            <!-- <mat-menu #product="matMenu">
                 <button mat-menu-item>
                     Web
                 </button>
                 <button mat-menu-item>
                     Mobile
                 </button>
-            </mat-menu>
-            <button mat-button [matMenuTriggerFor]="product">
+            </mat-menu> -->
+            <button mat-button [routerLink]="['production']">
                 <span class="title">Production</span>
             </button>
-            <button mat-button>
-                <span class="title">Principle</span>
+            <button mat-button [routerLink]="['members']">
+                <span class="title">Members</span>
             </button>
-            <button mat-button>
+            <button mat-button [routerLink]="['about-us']">
                 <span class="title">About Us</span>
             </button>
         </div>

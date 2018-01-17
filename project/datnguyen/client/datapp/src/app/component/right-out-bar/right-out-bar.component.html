@@ -1,0 +1,24 @@
+<div class="right-bar-container">
+  <mat-grid-list cols="1" rowHeight="50">
+    <mat-grid-tile class="" [colspan]=1 [rowspan]=1 [style.background]="['lightblue']">
+      <button mat-button style="height:inherit">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile class="" [colspan]=1 [rowspan]=1 [style.background]="['lightpink']">
+      <button mat-button style="height:inherit" [routerLinkActive]="['']">
+        <mat-icon>home</mat-icon>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile class="" [colspan]=1 [rowspan]=1 [style.background]="['lightgreen']">
+      <button mat-button style="height:inherit">
+        <mat-icon>info</mat-icon>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile class="" [colspan]=1 [rowspan]=1 [style.background]="['gold']">
+      <button mat-button style="height:inherit" [routerLinkActive]="['register/form']">
+        <mat-icon>create</mat-icon>
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

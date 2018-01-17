@@ -16,21 +16,18 @@ export class FooterComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngAfterViewInit(){
-    this.supports.set("location", [
-      {address: "Lab 1", detail: "AAAAAAAAAAAAAA"},
-      {address: "Lab 2", detail: "BBBBBBBBBBBB"},
-      {address: "Lab 3", detail: "BBBBBBBBBBBB"},
-      {address: "Lab 4", detail: "BBBBBBBBBBBB"},
-      {address: "Lab 5", detail: "BBBBBBBBBBBB"},
-      {address: "Lab 6", detail: "BBBBBBBBBBBB"},
-    ]);
-    this.supports.set("social", [
-      {address: "Gmail", detail: "AAAAAAAAAAAAAA"},
-      {address: "FaceBook", detail: "BBBBBBBBBBBB"},
-      {address: "Yahoo", detail: "BBBBBBBBBBBB"},
-    ]);
+    
   }
 
   ngOnInit() {
+    this.supports.set("location", [
+      {address: "Lab 1", detail: "22/xx Phan Huy Liệu"},
+      {address: "Lab 4", detail: "33/@@ Đặng Văn Ngữ"},
+
+    ]);
+    this.supports.set("social", [
+      {address: "Gmail", detail: "teacode.runner@gmail.com"},
+      {address: "FaceBook", detail: "tea.code.3@facebook"},
+    ]);
   }
 }

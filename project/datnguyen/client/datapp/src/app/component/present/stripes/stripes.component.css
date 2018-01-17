@@ -9,12 +9,12 @@ mat-card-content.pre-stripes > div {
 
 mat-card-content.pre-stripes > div:first-child {
     display: inline-block;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 mat-card-content.pre-stripes > div:last-child {
     float: right;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 mat-card-content.pre-stripes > div:last-child > * {

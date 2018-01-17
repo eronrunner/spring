@@ -1,0 +1,35 @@
+<div class="member-form-container">
+  <mat-card>
+    <mat-card-content>
+      <form mat-form>
+        <section class="section">
+          <mat-form-field class="field-lg">
+            <input matInput placeholder="Username" #username>
+          </mat-form-field>
+        </section>
+        <section class="section">
+          <mat-form-field class="field-lg">
+            <input matInput placeholder="Password" #password>
+          </mat-form-field>
+        </section>
+        <section class="section">
+            <mat-form-field class="field-lg">
+              <input matInput [type]="['email']" placeholder="Email" #email>
+            </mat-form-field>
+          </section>
+        <section class="section">
+          <mat-radio-button name="gentle" [checked]="['true']">Male</mat-radio-button>
+          <mat-radio-button name="gentle">Female</mat-radio-button>
+        </section>
+        <section class="section">
+          <mat-checkbox [checked]="['false']" class="field-lag">
+            You agree with our terms
+          </mat-checkbox>
+        </section>
+        <section class="section">
+          <a mat-raised-button>Register</a>
+        </section>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

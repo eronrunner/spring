@@ -1,0 +1,17 @@
+.member-form-container {
+    width: inherit;
+    height: 20vw;
+    overflow: auto;
+    margin: 10px 20px;   
+}
+
+.field-lg {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 50px;
+}
