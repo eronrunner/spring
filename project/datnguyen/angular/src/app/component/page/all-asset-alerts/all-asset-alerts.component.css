@@ -1,0 +1,56 @@
+.title-bar-container {
+    width: inherit;
+    height: 5vh;
+}
+
+.menu-icon {
+    min-width: inherit;
+    height: inherit;
+    min-height: inherit;
+    /* padding: 0 0; */
+}
+
+.bar {
+    width: inherit;
+    min-height: inherit;
+    height: inherit;
+}
+
+.bar-filler {
+    flex: 1 1 auto;
+}
+
+.lable {
+    margin: 0 10px;
+}
+
+.view {
+    margin: 10px 0;
+}
+
+.main-view {
+    background-color: lightblue;
+    width: inherit;
+    min-height: 80vh;
+}
+
+.flex {
+    min-width: 100%;
+    width: 100%;
+    min-height: inherit;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.grid-tab {
+    background-color: burlywood;
+    grid-template-columns: 100%;
+    grid-template-rows:  50px 50px auto;
+    display: grid;
+}
+
+.right {
+    float: right;
+}

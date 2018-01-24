@@ -1,0 +1,19 @@
+.card-content {
+    width: auto;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 80px 30px auto;
+    grid-template-rows: 80px auto;
+}
+
+.table {
+    border-collapse: collapse;
+    /* table-layout: auto; */
+}
+
+.table th, table td {
+    padding: 5px 20px;
+    text-align: left;
+    /* word-wrap: break-word; */
+}
+

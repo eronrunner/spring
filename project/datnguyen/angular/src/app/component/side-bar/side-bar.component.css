@@ -1,0 +1,21 @@
+.menu-icon {
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    text-align: left;
+}
+
+.row {
+    padding: 0;
+    border-right: 1px solid coral;
+    height: auto;
+}
+
+.side-bar-container {
+    min-width: inherit;
+    left: 0;
+    display: flex;
+    height: 100%;
+    position: fixed;
+    border-right: 1px solid coral;
+}

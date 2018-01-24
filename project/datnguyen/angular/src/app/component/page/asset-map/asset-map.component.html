@@ -1,0 +1,54 @@
+<div class="main-content-container">
+  <div class="title-bar-container">
+    <mat-toolbar class="bar" color="primary">
+      <mat-icon>map</mat-icon>
+      <span class="lable">Assets Map Status Overview</span>
+      <span class="bar-filler"></span>
+      <button class="menu-icon" mat-button>
+        <mat-icon>view_module</mat-icon>
+      </button>
+      <button class="menu-icon" mat-button>
+        <mat-icon>view_list</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+  <div class="title-bar-container">
+    <mat-toolbar class="bar" color="">
+      <button mat-raised-button class="menu-icon">
+          All(12)
+      </button>
+      <button mat-raised-button class="menu-icon">
+          Online(12)
+      </button>
+      <button mat-raised-button class="menu-icon">
+          Offline(12)
+      </button>
+      <button mat-raised-button class="menu-icon">
+          Off Contract(12)
+      </button>
+      <button mat-raised-button class="menu-icon">
+          Ending Contract(12)
+      </button>
+      <button mat-raised-button class="menu-icon">
+          Not Activated(12)
+      </button>
+      <span class="bar-filler"></span>
+      <mat-form-field>
+        <input matInput [type]="['text']" placeholder="search">
+      </mat-form-field>
+      <button mat-button class="menu-icon">
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+  <div class="view">
+    <div class="main-view">
+      <app-asset-short-stage-list [stages]="assets" class="flex">
+
+      </app-asset-short-stage-list>
+      <div class="paginator">
+        <mat-paginator [length]="assets.length" [pageSize]="defaultSize ? assets.length <= defaultSize : assets.length" [pageSizeOptions]="[5, 10]">
+        </mat-paginator>
+      </div>
+    </div>
+  </div>

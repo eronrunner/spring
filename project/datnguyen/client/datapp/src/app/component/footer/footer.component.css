@@ -1,14 +1,9 @@
 .footer-container {
     width: 100%;
-    height: 20vw;
+    height: auto;
     background-color: goldenrod;
     font-family: 'Lora', serif;
-
-}
-
-.footer-container > * {
-    float: left;
-    font-family: 'Lora', serif;
+    display: flex;
 }
 
 .copyright {

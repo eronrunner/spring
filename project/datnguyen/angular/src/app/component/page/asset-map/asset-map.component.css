@@ -1,0 +1,59 @@
+.main-content-container {
+    width: 100%;
+    height: inherit;
+}
+
+.title-bar-container {
+    width: inherit;
+    height: 5vh;
+}
+
+.menu-icon {
+    min-width: inherit;
+    height: inherit;
+    min-height: inherit;
+    /* padding: 0 0; */
+}
+
+.bar {
+    width: inherit;
+    min-height: inherit;
+    height: inherit;
+}
+
+.bar-filler {
+    flex: 1 1 auto;
+}
+
+.lable {
+    margin: 0 10px;
+}
+
+.view {
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+.main-view {
+    background-color: lightblue;
+    width: inherit;
+    min-height: 360x;
+    height: auto;
+}
+
+.paginator {
+    background-color: lightcoral;
+    height: auto;
+    /* margin: auto; */
+}
+
+.flex {
+    min-width: 100%;
+    width: 100%;
+    min-height: inherit;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}

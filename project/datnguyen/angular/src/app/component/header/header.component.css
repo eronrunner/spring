@@ -1,0 +1,33 @@
+
+.header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 5vh;
+    z-index: 1000;
+}
+
+.bar {
+    width: inherit;
+    min-height: inherit;
+    height: inherit;
+}
+
+.logo {
+    padding: 0 10px 0 10px;
+    max-width: 150px;
+}
+
+.logo img {
+    height: inherit;
+    max-width: inherit;
+}
+
+.bar-filler {
+    flex: 1 1 auto;
+}
+
+.menu-icon {
+    min-width: inherit;    
+    height: inherit;
+}

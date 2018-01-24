@@ -1,0 +1,53 @@
+<div class="asset-alert-container">
+  <div class="title-bar-container">
+    <mat-toolbar class="bar" color="primary">
+      <mat-icon>map</mat-icon>
+      <span class="lable">Assets Map Status Overview</span>
+      <span class="bar-filler"></span>
+      <button class="menu-icon" mat-button>
+        New Alerts
+      </button>
+      <app-search-suggestion-select>
+      </app-search-suggestion-select>
+    </mat-toolbar>
+  </div>
+</div>
+<div class="view">
+  <div class="main-view">
+    <mat-tab-group class="main-view">
+      <mat-tab label="Activate Alerts">
+        <div class="grid-tab">
+          <div>
+            <button mat-button class="right menu-icon">
+              <mat-icon>search</mat-icon>
+            </button>
+            <mat-form-field class="right menu-icon">
+              <input matInput placeholder="Search here ...">
+            </mat-form-field>
+          </div>
+          <div>
+            <button mat-button href="#" class="right menu-icon">
+              <mat-icon>settings</mat-icon>
+            </button>
+          </div>
+          <div>
+            <app-asset-alert-table [assetAlerts]="ELEMENT_DATA" [displayedColumns]="displayedColumns">
+
+            </app-asset-alert-table>
+          </div>
+          <div class="paginator">
+            <div class="paginator">
+              <mat-paginator [length]="10" [pageSize]="5" [pageSizeOptions]="[5, 10]">
+              </mat-paginator>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Historical Alerts">
+        <div class="content">
+          content 2
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

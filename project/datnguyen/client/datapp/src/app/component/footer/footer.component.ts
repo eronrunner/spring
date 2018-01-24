@@ -23,7 +23,9 @@ export class FooterComponent implements OnInit, AfterViewInit {
     this.supports.set("location", [
       {address: "Lab 1", detail: "22/xx Phan Huy Liệu"},
       {address: "Lab 4", detail: "33/@@ Đặng Văn Ngữ"},
-
+      {address: "Lab 4", detail: "33/@@ Đặng Văn Ngữ"},
+      {address: "Lab 4", detail: "33/@@ Đặng Văn Ngữ"},
+      {address: "Lab 4", detail: "33/@@ Đặng Văn Ngữ"},
     ]);
     this.supports.set("social", [
       {address: "Gmail", detail: "teacode.runner@gmail.com"},

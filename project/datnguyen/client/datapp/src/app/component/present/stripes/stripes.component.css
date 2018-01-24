@@ -21,3 +21,13 @@ mat-card-content.pre-stripes > div:last-child > * {
     height: inherit;
     float: inherit;
 }
+span {
+    width: 50%;
+}
+.img {
+    width:100%;
+    display: table;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
