@@ -4,12 +4,12 @@ public class StudentService implements StudentDo {
 
 	@Override
 	public void login(Account acc) {
-		System.out.println("Account " + acc.getUserName() + " login");
+		System.out.println("Account: " + acc.getUserName() + " login");
 	}
 
 	@Override
 	public void logout(Account acc) {
-		System.out.println("Account " + acc.getUserName() + " logout");
+		System.out.println("Account: " + acc.getUserName() + " logout");
 	}
 
 	@Override

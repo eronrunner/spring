@@ -18,6 +18,9 @@ public class simple {
 		
 		tserve.createCoursePlanning(teacher);
 		tserve.recordScores(teacher);
+
+		tserve.logout(student);
+		stserve.logout(teacher);
 	}
 
 }
