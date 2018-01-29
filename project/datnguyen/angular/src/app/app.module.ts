@@ -24,6 +24,30 @@ import { NavLinkTabComponent } from './component/common/nav-link-tab/nav-link-ta
 import { RouterModule } from '@angular/router';
 import { AssetAlertComponent } from './component/common/asset-alert/asset-alert.component';
 import { AssetAlertTableComponent } from './component/display/asset-alert-table/asset-alert-table.component';
+import { LoginComponent } from './component/page/login/login.component';
+import { LoginFormComponent } from './component/common/login-form/login-form.component';
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
+import 'rxjs/Rx';
+import { HomeComponent } from './component/page/home/home.component';
+import { Routes } from '@angular/router/src/config';
+import { assertNotNull } from '@angular/compiler/src/output/output_ast';
+import { ObservationMapComponent } from './component/common/observation-map/observation-map.component';
+
+const routes: Routes = [
+  {path: '', component: LoginComponent, pathMatch:'full'},
+  {path: 'login', component: LoginComponent, data: {animation: 'login'}},
+  {path: 'home', component: HomeComponent, children: [
+    {path: 'asset-map', component: AssetStatusComponent, data: {animation: 'all-asset-alerts'}},
+    {path: 'all-asset-alerts', component: AllAssetAlertsComponent, data: {animation: 'asset-map'}},
+    {path: 'asset-status', component: AssetMapComponent, data: {animation: 'asset-status'}},
+    {path: 'reports', component: ReportsComponent, data: {animation: 'reports'}},
+    {path: 'share-trips', component: ShareTripsComponent, data: {animation: 'share-trips'}},
+    {path: 'admin', component: AdminComponent, data: {animation: 'admin'}},
+    {path: 'system-developer', component: SystemDevelopmentComponent, data: {animation: 'system-devlopment'}}
+  ], data: {animation: 'home'}},
+];
+
 
 @NgModule({
   declarations: [
@@ -46,15 +70,23 @@ import { AssetAlertTableComponent } from './component/display/asset-alert-table/
     SearchSuggestionSelectComponent,
     NavLinkTabComponent,
     AssetAlertComponent,
-    AssetAlertTableComponent
+    AssetAlertTableComponent,
+    LoginComponent,
+    LoginFormComponent,
+    HomeComponent,
+    ObservationMapComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RouterModule,
+    RouterModule.forRoot(routes, {useHash: true}),
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

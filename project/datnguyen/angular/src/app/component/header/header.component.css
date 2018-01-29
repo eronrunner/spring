@@ -11,6 +11,8 @@
     width: inherit;
     min-height: inherit;
     height: inherit;
+    background-color: #75b9e6;
+    color: #fff;
 }
 
 .logo {
@@ -30,4 +32,5 @@
 .menu-icon {
     min-width: inherit;    
     height: inherit;
+    color: inherit;
 }

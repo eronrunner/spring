@@ -1,17 +1,25 @@
 .main-content-container {
     width: 100%;
     height: inherit;
+    color: #768399;
+    font-family: 'Lora', serif;
 }
 
 .title-bar-container {
     width: inherit;
     height: 5vh;
+    color: inherit;
+    font-family: inherit;
 }
 
 .menu-icon {
     min-width: inherit;
     height: inherit;
     min-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    color: inherit;
+    font-family: inherit;
     /* padding: 0 0; */
 }
 
@@ -19,6 +27,8 @@
     width: inherit;
     min-height: inherit;
     height: inherit;
+    color: inherit;
+    font-family: inherit;
 }
 
 .bar-filler {
@@ -35,15 +45,18 @@
 }
 
 .main-view {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: inherit;
     min-height: 360x;
     height: auto;
 }
 
 .paginator {
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    margin: 10px 0; 
     height: auto;
+    color: inherit;
+    font-family: inherit;
     /* margin: auto; */
 }
 
@@ -55,5 +68,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: space-around;
+}
+
+.flex > div {
+    margin: 10px;
 }

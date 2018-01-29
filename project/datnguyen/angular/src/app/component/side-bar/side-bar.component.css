@@ -3,13 +3,15 @@
     width: inherit;
     height: inherit;
     text-align: left;
-}
+    color: #768399;
+    font-family: 'Lora', serif;}
 
 .row {
     padding: 0;
-    border-right: 1px solid coral;
     height: auto;
-}
+    color: inherit;
+    color: #768399;
+    font-family: 'Lora', serif;}
 
 .side-bar-container {
     min-width: inherit;
@@ -17,5 +19,10 @@
     display: flex;
     height: 100%;
     position: fixed;
-    border-right: 1px solid coral;
+    border-right: 2px solid lightgray;
+}
+
+.bar {
+    background-color: #f3f5f6;
+    color: #768399;
 }

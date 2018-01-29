@@ -1,12 +1,16 @@
 .title-bar-container {
     width: inherit;
     height: 5vh;
+    color: #768399;
+    font-family: 'Lora', serif;
 }
 
 .menu-icon {
     min-width: inherit;
     height: inherit;
     min-height: inherit;
+    color: inherit;
+    font-family: inherit;
     /* padding: 0 0; */
 }
 
@@ -14,6 +18,8 @@
     width: inherit;
     min-height: inherit;
     height: inherit;
+    color: inherit;
+    font-family: inherit;
 }
 
 .bar-filler {
@@ -29,7 +35,7 @@
 }
 
 .main-view {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: inherit;
     min-height: 80vh;
 }
@@ -45,7 +51,7 @@
 }
 
 .grid-tab {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     grid-template-columns: 100%;
     grid-template-rows:  50px 50px auto;
     display: grid;

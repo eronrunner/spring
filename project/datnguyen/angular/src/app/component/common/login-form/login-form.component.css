@@ -1,0 +1,14 @@
+.lg-field {
+    width: 100%;
+}
+
+.card {
+    min-height: inherit;
+    min-width: inherit;
+    width: inherit;
+    height: 100%;
+}
+
+.shadow {
+    box-shadow: 0px 5px 5px 0 gray;
+}

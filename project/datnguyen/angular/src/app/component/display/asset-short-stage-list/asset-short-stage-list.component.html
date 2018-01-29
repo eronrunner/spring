@@ -5,12 +5,12 @@
       <div>
         <table class="table">
           <tr>
-            <th colspan="2">{{stage.assetName}}</th>
+            <th colspan="2" [style.font-size]="['18px']">{{stage.assetName}}</th>
           </tr>
           <tr>
             <td>Status:</td>
             <td>
-              <mat-chip>{{stage.status}}</mat-chip>
+              <mat-chip-list><mat-chip>{{stage.status}}</mat-chip></mat-chip-list>
             </td>
           </tr>
           <tr>
@@ -28,7 +28,9 @@
           <tr>
             <td>Alerts:</td>
             <td>
-              <mat-chip>{{stage.alerts}}</mat-chip>
+              <mat-chip-list>
+                <mat-chip [style.background]="['lightblue']">{{stage.alerts}}</mat-chip>
+              </mat-chip-list>
             </td>
           </tr>
         </table>
