@@ -7,7 +7,6 @@ public class simple {
 		Teacher teacher = new Teacher("namNguyen","123456","nkhoanam@tma.com.vn","super","Nguyen","Khoa Nam","456/654");
 		
 		StudentService stserve = new StudentService();
-		
 		TeacherService tserve = new TeacherService();
 		
 		stserve.login(student);
