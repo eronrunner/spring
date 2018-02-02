@@ -1,0 +1,8 @@
+com/example/config/MyWebInitializer.class
+com/example/web/bookmanagement/BookController.class
+com/example/data/model/Book.class
+com/example/web/HelloController.class
+com/example/web/bookmanagement/service/BookManagementService.class
+com/example/web/bookmanagement/serviceimpl/BookManagementServiceImpl.class
+com/example/data/model/Author.class
+com/example/config/SpringWebConfig.class

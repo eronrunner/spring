@@ -11,7 +11,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 
 
-public class AppInitializer implements WebApplicationInitializer {
+public class AppInitializer {
 
 	public void onStartup(ServletContext container) throws ServletException {
 		// TODO Auto-generated method stub
