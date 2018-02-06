@@ -1,8 +1,12 @@
 com/example/config/MyWebInitializer.class
+com/example/annotation/AccessTime.class
 com/example/web/bookmanagement/BookController.class
 com/example/data/model/Book.class
-com/example/web/HelloController.class
 com/example/web/bookmanagement/service/BookManagementService.class
-com/example/web/bookmanagement/serviceimpl/BookManagementServiceImpl.class
 com/example/data/model/Author.class
+com/example/config/JpaConfiguration.class
+com/example/aop/AccessTimeLog.class
+com/example/common/dao/BookRepository.class
+com/example/web/HelloController.class
+com/example/web/bookmanagement/serviceimpl/BookManagementServiceImpl.class
 com/example/config/SpringWebConfig.class
