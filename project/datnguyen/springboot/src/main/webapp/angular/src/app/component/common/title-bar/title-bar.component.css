@@ -1,0 +1,24 @@
+.title-bar-container {
+    width: inherit;
+    min-height: 5vh;
+}
+
+.title-bar-container button {
+    min-width: inherit;
+    height: inherit;
+    min-height: inherit;
+}
+
+.bar {
+    width: inherit;
+    min-height: inherit;
+    height: inherit;
+}
+
+.bar-filler {
+    flex: 1 1 auto;
+}
+
+.lable {
+    margin: 0 10px;
+}

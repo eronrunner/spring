@@ -1,0 +1,49 @@
+<mat-sidenav-container color="">
+    <mat-sidenav mode="side" opened="true"></mat-sidenav>
+    <mat-sidenav-content class="side-bar-container">
+        <mat-toolbar color="" class="bar">
+            <mat-toolbar-row class="row">
+                <button mat-button class="menu-icon" [routerLink]="['asset-map']">
+                    <mat-icon>map</mat-icon>
+                    <span class="lable">Asset Map</span>
+                </button>
+            </mat-toolbar-row>
+            <mat-toolbar-row class="row">
+                <button mat-button class="menu-icon" [routerLink]="['asset-status']">
+                    <mat-icon>track_changes</mat-icon>
+                    <span class="lable">Assert status</span>
+                </button>
+            </mat-toolbar-row>
+            <mat-toolbar-row class="row">
+                <button mat-button class="menu-icon" [routerLink]="['all-asset-alerts']">
+                    <mat-icon>report_problem</mat-icon>
+                    <span class="lable">All assert alerts</span>
+                </button>
+            </mat-toolbar-row>
+            <mat-toolbar-row class="row">
+                <button mat-button class="menu-icon" [routerLink]="['reports']">
+                    <mat-icon>receipt</mat-icon>
+                    <span class="lable">Reports</span>
+                </button>
+            </mat-toolbar-row>
+            <mat-toolbar-row class="row">
+                <button mat-button class="menu-icon" [routerLink]="['share-trips']">
+                    <mat-icon>share</mat-icon>
+                    <span class="lable">Share Trips</span>
+                </button>
+            </mat-toolbar-row>
+            <mat-toolbar-row class="row">
+                <button mat-button class="menu-icon" [routerLink]="['admin']">
+                    <mat-icon>settings</mat-icon>
+                    <span class="label">Admin</span>
+                </button>
+            </mat-toolbar-row>
+            <mat-toolbar-row class="row">
+                <button mat-button class="menu-icon"[routerLink]="['system-developer']">
+                    <mat-icon>code</mat-icon>
+                    <span class="lable">System Developer</span>
+                </button>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </mat-sidenav-content>
+</mat-sidenav-container>

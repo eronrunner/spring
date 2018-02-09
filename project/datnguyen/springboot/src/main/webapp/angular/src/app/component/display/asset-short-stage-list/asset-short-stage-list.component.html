@@ -1,0 +1,39 @@
+<app-asset-short-stage *ngFor="let stage of stages" [assetShortStage]="['stage']">
+  <div class="card-content">
+      <img src="{{stage.assetIcon}}}">
+      <span></span>
+      <div>
+        <table class="table">
+          <tr>
+            <th colspan="2" [style.font-size]="['18px']">{{stage.assetName}}</th>
+          </tr>
+          <tr>
+            <td>Status:</td>
+            <td>
+              <mat-chip-list><mat-chip>{{stage.status}}</mat-chip></mat-chip-list>
+            </td>
+          </tr>
+          <tr>
+            <td>Last activity:</td>
+            <td>{{stage.lastActivity}}</td>
+          </tr>
+          <tr>
+            <td>Last location update:</td>
+            <td>{{stage.lastLocationUpdate}}</td>
+          </tr>
+          <tr>
+            <td>Last seen alive:</td>
+            <td>{{stage.lastSeenAlive}}</td>
+          </tr>
+          <tr>
+            <td>Alerts:</td>
+            <td>
+              <mat-chip-list>
+                <mat-chip [style.background]="['lightblue']">{{stage.alerts}}</mat-chip>
+              </mat-chip-list>
+            </td>
+          </tr>
+        </table>
+      </div> 
+  </div>
+</app-asset-short-stage>

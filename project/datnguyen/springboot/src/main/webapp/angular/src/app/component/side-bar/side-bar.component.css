@@ -1,0 +1,28 @@
+.menu-icon {
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    text-align: left;
+    color: #768399;
+    font-family: 'Lora', serif;}
+
+.row {
+    padding: 0;
+    height: auto;
+    color: inherit;
+    color: #768399;
+    font-family: 'Lora', serif;}
+
+.side-bar-container {
+    min-width: inherit;
+    left: 0;
+    display: flex;
+    height: 100%;
+    position: fixed;
+    border-right: 2px solid lightgray;
+}
+
+.bar {
+    background-color: #f3f5f6;
+    color: #768399;
+}

@@ -1,0 +1,40 @@
+<div class="shadow">
+<mat-card class="card">
+  <mat-card-title>
+    {{title}}
+  </mat-card-title>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-card-content>
+      <section>
+        <mat-form-field class="lg-field">
+          <input matInput type="text" placeholder="User Name" formControlName="userName">
+          <mat-hint *ngIf="userName.errors && (userName.touched)">
+            <mat-error *ngIf="userName.hasError('required')">User Name is required</mat-error>
+          </mat-hint>
+        </mat-form-field>
+      </section>
+      <section>
+        <mat-form-field class="lg-field">
+          <input matInput type="password" placeholder="Password" formControlName="password">
+          <mat-hint class="form-control-feedback" *ngIf="password.errors && (password.dirty ||
+          password.touched)">
+            <mat-error *ngIf="password.hasError('required')">Password is required</mat-error>
+            <mat-error *ngIf="password.hasError('minlength')">Password must be 8 characters long, you need {{password.errors.minlength.requiredLength - password.errors.minlength.actualLength}}
+              others
+            </mat-error>
+          </mat-hint>
+        </mat-form-field>
+      </section>
+      <br>
+        <ng-content></ng-content>
+      <section>
+        <button mat-raised-button type="submit" color="primary" [disabled]="form.invalid">{{submitText}}</button>
+      </section>
+    </mat-card-content>
+  </form>
+  <!-- <pre>{{form.value | json}}</pre> -->
+  <mat-card-footer>
+    
+  </mat-card-footer>
+</mat-card>
+</div>
