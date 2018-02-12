@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AccountManagementGetControllerService } from '../../../controller/account-management-get-controller.service';
-import { Http } from '@angular/http/src/http';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-login',
@@ -14,20 +14,32 @@ export class LoginComponent implements OnInit {
   accounts = [{userName: 'nphatdat', password: '12345678'}];
   error: String = 'Error';
   success: String = 'Success';
-  user: any;
+  data: any[] = [];
 
   constructor(private router: Router, 
     public accountGet: AccountManagementGetControllerService,
-    public get : Http
-  ) { 
+    private http: Http
+  ){
+
   }
 
   ngOnInit() {
-   this.isSuccess = true;
+    this.isSuccess = true;
+    this.accountGet.findAllAccounts().subscribe(
+      val => {
+        this.data = val.data;
+      },
+      err => {
+        //show on component
+      }
+    );
+  }
+
+  ngAfterContentInit() {
+
   }
 
   login(user){
-    this.user = user;
     for(let acc of this.accounts){
       if(acc.userName == user.userName && acc.password == user.password) {
         this.isLogin = true;
@@ -42,8 +54,5 @@ export class LoginComponent implements OnInit {
     }else {
       this.isSuccess = false;
     }
-  }
-  get(){
-    
   }
 }

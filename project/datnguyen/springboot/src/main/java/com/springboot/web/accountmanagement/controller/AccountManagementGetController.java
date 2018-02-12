@@ -1,4 +1,4 @@
-	package com.springboot.web.accountmanagement;
+	package com.springboot.web.accountmanagement.controller;
 
 import java.util.HashMap;
 import java.util.List;
@@ -59,6 +59,5 @@ public class AccountManagementGetController {
 		wrapper.put("data", m_accessionService.searchAccountById(key));
 		return wrapper;
 	}
-	
 	
 }
