@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
-import com.springboot.common.dao.AccountDAO;
+import com.springboot.common.dao.AccountDao;
 import com.springboot.common.dao.util.AccountUtils;
 import com.springboot.common.dao.util.Utils;
 import com.springboot.data.model.Account;
@@ -16,7 +16,7 @@ import com.springboot.web.accountmanagement.service.AccountManagementAccessionSe
 @Service
 public class AccountManagementAccesstionServiveImpl implements AccountManagementAccessionService {
 	@Autowired
-	private AccountDAO m_accountDao;
+	private AccountDao m_accountDao;
 	@Autowired
 	private AccountUtils m_accountUtils;
 	@Autowired

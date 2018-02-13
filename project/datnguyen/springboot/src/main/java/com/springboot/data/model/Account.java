@@ -41,7 +41,7 @@ public class Account {
 	}
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue
 	@Column(name = "accountId", nullable = false, length = 50)
 	public String getAccountId() {
 		return accountId;

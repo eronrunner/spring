@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import com.springboot.data.model.Account;
 
 @Repository
-public interface AccountDAO extends JpaRepository<Account, String> {
+public interface AccountDao extends JpaRepository<Account, String> {
 
 }

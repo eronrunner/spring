@@ -22,7 +22,7 @@ export class RequestDataService {
     );
   }
 
-  doPost(url: string, request: RequestOptions){
+  doPost(url: string, request: RequestOptions): Observable<Response>{
     return this.http.post(url, request).map(
       res => {
         console.log(res);
@@ -35,7 +35,7 @@ export class RequestDataService {
     );
   }
 
-  doPut(url: string, request: RequestOptions) {
+  doPut(url: string, request: RequestOptions): Observable<Response>{
     return this.http.put(url, request).map(
       res => {
         console.log(res);
@@ -48,7 +48,7 @@ export class RequestDataService {
     );
   }
 
-  doDelete(url: string, request: RequestOptions) {
+  doDelete(url: string, request: RequestOptions): Observable<Response>{
     return this.http.delete(url, request).map(
       res => {
         console.log(res);

@@ -1,0 +1,10 @@
+.registered-account-container {
+    width: 100%;
+    height: 100%;
+}
+
+.registered-form {
+    margin: auto;
+    width: 50%;
+    height: inherit;
+}

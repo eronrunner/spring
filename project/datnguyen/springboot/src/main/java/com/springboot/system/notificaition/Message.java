@@ -1,5 +1,8 @@
 package com.springboot.system.notificaition;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Message implements MessageService{
 	
 	private String title;
@@ -36,6 +39,12 @@ public class Message implements MessageService{
 	public Message createMessage(Message ms) {
 		// TODO Auto-generated method stub
 		return null ;
+	}
+
+	@Override
+	public Message messageSuccess() {
+		// TODO Auto-generated method stub
+		return new Message("Notification", "Success");
 	}
 	
 }

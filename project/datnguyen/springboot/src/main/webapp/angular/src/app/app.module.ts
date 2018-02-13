@@ -36,6 +36,8 @@ import { ObservationMapComponent } from './component/common/observation-map/obse
 import { HttpModule } from '@angular/http';
 import { RequestDataService } from './service/request-data.service';
 import { ControllerModule } from './module/controller/controller.module';
+import { RegisteredAccountFormComponent } from './component/common/registered-account-form/registered-account-form.component';
+import { RegisteredAccountComponent } from './component/page/registered-account/registered-account.component';
 
 
 const routes: Routes = [
@@ -78,7 +80,9 @@ const routes: Routes = [
     LoginComponent,
     LoginFormComponent,
     HomeComponent,
-    ObservationMapComponent
+    ObservationMapComponent,
+    RegisteredAccountFormComponent,
+    RegisteredAccountComponent,
   ],
   imports: [
     BrowserModule,

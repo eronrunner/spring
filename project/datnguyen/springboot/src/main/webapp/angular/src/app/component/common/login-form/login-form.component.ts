@@ -26,7 +26,7 @@ export class LoginFormComponent implements OnInit {
     this.creatFormControls();
     this.userName.valueChanges.debounceTime(400).distinctUntilChanged().subscribe(term => {
       this.searchs.push(term);
-    }); 
+    });
     this.createForm();
   }
 

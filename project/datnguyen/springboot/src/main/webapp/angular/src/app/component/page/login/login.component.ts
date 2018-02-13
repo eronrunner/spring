@@ -14,25 +14,15 @@ export class LoginComponent implements OnInit {
   accounts = [{userName: 'nphatdat', password: '12345678'}];
   error: String = 'Error';
   success: String = 'Success';
-  data: any[] = [];
 
   constructor(private router: Router, 
     public accountGet: AccountManagementGetControllerService,
-    private http: Http
   ){
 
   }
 
   ngOnInit() {
     this.isSuccess = true;
-    this.accountGet.findAllAccounts().subscribe(
-      val => {
-        this.data = val.data;
-      },
-      err => {
-        //show on component
-      }
-    );
   }
 
   ngAfterContentInit() {
